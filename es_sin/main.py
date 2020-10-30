@@ -1,5 +1,9 @@
+from es_sin.es_compute import get_location
+
+
 def main():
-    print('started')
+    product = input()
+    print(get_location(product))
     pass
 
 
