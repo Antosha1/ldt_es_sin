@@ -15,6 +15,7 @@ def softmax(profits):
 def get_score(business_names):
     d = {}
     for business_name in business_names:
+        profit = 0
         # select 'Общая итоговая сумма в чеках' as profit
         # from kkt_table
         # where 'Наименование' == business_name
