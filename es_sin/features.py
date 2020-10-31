@@ -27,4 +27,4 @@ def get_valuable_features(product_frame, sc):
     # locations = [business.location for business in top_businesses]
     location_features = [get_location_features(location) for location, _ in business_scores]
     columns = get_columns()
-    return zip(columns, filter_features(columns, location_features, target_scores, sc))
+    return filter_features(columns, location_features, target_scores, sc)
