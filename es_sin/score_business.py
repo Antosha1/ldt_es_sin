@@ -24,7 +24,6 @@ def get_score(businesses):
     # profits = [profit for profit in d.values()]
     profits = businesses.Profit.values
     scores = softmax(profits)
-    print(scores)
     # d_scores = {profits[i]: scores[i] for i in range(len(profits))}
 
     # business_scores = {business_name: d_scores[profit] for business_name, profit in d.items()}
