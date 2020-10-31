@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main page</title>
+</head>
+<body>
+<h2>Введите категорию товаров</h2>
+<form method="post" action="/add_message">
+    <input type="text" name="product">
+    <button type="submit">рассчитать</button>
+</form>
+
+<h3>Предпочтительное местоположение</h3>
+{% for result in results %}
+<div>{{ result }}</div>
+{% endfor %}
+
+</body>
+</html>
