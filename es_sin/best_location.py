@@ -1,2 +1,5 @@
+import random
+
+
 def get_best_location(possible_locations, valuable_features):
-    return possible_locations[0]
+    return random.choice(possible_locations)
