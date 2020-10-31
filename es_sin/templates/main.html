@@ -12,9 +12,11 @@
 </form>
 
 <h3>Предпочтительное местоположение</h3>
-{% for result in results %}
 <div>{{ result }}</div>
-{% endfor %}
 
+<h3>Основные признаки</h3>
+{% for feature in features %}
+<div>{{ feature }}</div>
+{% endfor %}
 </body>
 </html>
