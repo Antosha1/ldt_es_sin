@@ -4,7 +4,6 @@ data_path = 'data/'
 location_df = None
 
 
-
 def init_locations():
     global location_df
     df = pd.read_excel(data_path + 'Датасет (Департамент информационных технологий города Москвы).xlsx')
@@ -28,3 +27,7 @@ init_locations()
 
 def get_location_list():
     return location_df['district']
+
+
+def get_location_features(location):
+    return location_df[location_df['district'] == location]
