@@ -11,4 +11,4 @@ def get_location(product):
     valuable_features = get_valuable_features(product)
     possible_locations = get_possible_locations(product)
     best_location = get_best_location(possible_locations, valuable_features)
-    return best_location
+    return best_location, valuable_features[0:2]
