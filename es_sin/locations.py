@@ -30,4 +30,4 @@ def get_location_list():
 
 
 def get_location_features(location):
-    return location_df[location_df['district'] == location]
+    return list(location_df), location_df[location_df['district'] == location].values
