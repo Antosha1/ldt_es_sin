@@ -30,4 +30,9 @@ def get_location_list():
 
 
 def get_location_features(location):
-    return location_df[location_df['district'] == location]
+    new_df = location_df[location_df['district'] == location]
+    return new_df.drop(['district'], axis=1).values[0]
+
+
+def get_columns():
+    return list(location_df)
