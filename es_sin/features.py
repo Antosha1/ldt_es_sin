@@ -28,8 +28,8 @@ def get_top_k_features(feature_coefs, columns):
     return sorted_features[:k]
 
 
-def get_valuable_features(product_frame, sc):
-    businesses = get_businesses(product_frame)
+def get_valuable_features(product, sc):
+    businesses = get_businesses(product)
     if businesses.empty:
         return None
     target_scores = get_score(businesses)
